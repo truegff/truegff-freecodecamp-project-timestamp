@@ -21,7 +21,6 @@ app.get("/", function (req, res) {
 app.get("/api/timestamp/:date?", function (req, res) {
   let dateParam = req.params.date;
   let date = null;
-  console.log(parseInt(dateParam));
   if (dateParam) {
     if (!isNaN(dateParam)) {
       date = new Date(parseInt(dateParam));
