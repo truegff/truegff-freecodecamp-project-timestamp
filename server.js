@@ -18,7 +18,7 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
 
-app.get("/api/timestamp/:date", function (req, res) {
+app.get("/api/timestamp/:date?", function (req, res) {
   let dateParam = req.params.date;
   let date = null;
   console.log(parseInt(dateParam));
